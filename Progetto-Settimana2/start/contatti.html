@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Epicode School: contattaci per i corsi di Front End Developer.">
+  <title>Epicode - Contatti</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="assets/css/stile.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <a href="index.html"><img src="assets/images/logo.png" alt="Logo Epicode"></a>
+      <input type="checkbox" class="btnMenu">
+      <label for="btnMenu" class="icoMenu"><i class="fa-solid fa-ellipsis"></i></label>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi&nbsp;siamo</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+          <button>Registrati</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h1 class="headings1 contatti">Contatti</h1>
+      </section>
+      <section class="contatti">
+        <form action="messaggio.php" method="post">
+          <input type="text" name="nome e cognome" id="name" placeholder="Nome e cognome">
+          <input type="email" name="email" id="email" placeholder="Indirizzo valido nome@casella.com">
+          <textarea name="messaggio" id="message" cols="30" rows="2"
+            placeholder="Scrivi in breve il tuo messaggio"></textarea>
+          <input type="submit" class="button" value="Invia il messaggio">
+        </form>
+
+        <div>
+          <h3 class="headings2">Sede formativa</h3>
+          <p>
+            <address>
+              Via Appia 1 <br />
+              00100 Roma (RM)
+            </address>
+          </p>
+
+          <p>
+            <a class="contatti" href="mailto:info@epicode.school" title="Scrivici" target="_blank">info@epicode.school</a> <br />
+            <a class="contatti" href="tel:+39 0612345956" title="Telefonaci">+39 0612345956</a>
+          </p>
+        
+          <h3 class="headings2">Lavora con noi</h3>
+          <p>
+            Per poterti candidare ad un ruolo da docente invia il tuo cv a <a class="contatti" href="mailto:job@epicode.school"
+              title="Candidati" target="_blank">job@epicode.school</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h4 class="headings2">Chi siamo</h4>
+        <p>Epicode School nasce con l&apos;obiettivo di rivoluzionare la formazione in ambito tech.</p>
+      </section>
+
+      <section>
+        <h4 class="headings2">Ti piace ciò che vedi?<br />
+          Condividilo con i tuoi amici!</h4>
+        <a href="https://m.facebook.com/epicodeitalia/?__tn__=C" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-facebook-square"></i></a>
+        <a href="https://it.linkedin.com/school/epicodeitalia/" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/epicode.italia/" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-instagram-square"></i></a>
+      </section>
+
+      <section>
+        <form action="newsletter.php" method="post">
+          <label for="form" class="headings2">Iscriviti alla nostra newsletter</label>
+          <input type="email" name="email" id="email">
+          <input type="submit" class="button" value="Va bene!">
+        </form>
+      </section>
+
+      <section>
+        <p>
+          &copy; 2021 Epicode Web Developer school -
+          Via Appia 1, 00100 Roma (RM) - Tel. <a class="contatti" href="tel:+39 0612345956" title="Telefonaci">06-12345678</a>
+        </p>
+      </section>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+}
+
+/*####################*/
+/*##### ATOMS #####*/
+
+/* IMAGES */
+header img {
+    background-color: white;
+    z-index: 5;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+
+/* LINK & ICONS */
+a:link, a:visited, i {
+    text-decoration: none;
+    color: #e42424;
+    font-size: 3rem;
+}
+
+header a:visited, header a:link{
+    font-size: 2rem;
+}
+
+a.contatti:visited, a.contatti:link {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+}
+
+
+/* BUTTONS */
+button, .button {
+    font-size: 1.5rem;
+    color: white;
+    background-image: linear-gradient(90deg, #6cc1e2, #392f7a);
+    border: none;
+    padding: 2% 4%;
+}
+main form input.button {
+    font-size: 1.9rem;
+    max-width: fit-content;
+    align-self: center;
+}
+textarea + .button {
+    padding: 4% 8%;
+}
+
+/* TYPOGRAPHY */
+.headings1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 8%;
+}
+.headings2 {
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 6%;
+}
+.headings3 {
+    font-size: 3rem;
+    margin-bottom: 0%;
+}
+h1.headings1 {
+    font-size: 4rem;
+}
+h1.contatti{
+    margin: 4% 0% 4%;
+}
+h3.headings2, caption {
+    font-size: 2.5rem;
+    margin-bottom: 4%;
+}
+p {
+    margin-bottom: 8%;
+}
+.banner p {
+    margin-bottom: 5%;
+}
+footer section:last-child, footer section>p {
+    margin-bottom: 0;
+}
+
+/* INPUT */
+main form input, main form textarea {
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+    padding: 3% 2%;
+}
+main input:placeholder-shown, main textarea:placeholder-shown {
+    font-style: italic;
+}
+footer input, footer input.button {
+    font-size: 2rem;
+    padding: 3% 0%;
+}
+
+
+/*####################*/
+/*##### MOLECULES #####*/
+
+/* NAV */
+nav li {
+    list-style: none;
+}
+
+/* TABLES */
+table {
+    margin: 10% auto;
+}
+
+th, td {
+    padding: 2% 1%;
+    text-align: start;
+}
+
+.desktop th, .desktop td {
+    text-align: center;
+}
+
+table.desktop tbody tr:nth-child(odd), tr.mobile {
+    background-color: #d2dce7;
+}
+
+table.mobile th {
+   font-weight: bold;
+}
+
+thead {
+    background-color: hsl(219, 40%, 66%);
+    color: white;
+}
+
+
+
+/*####################*/
+/*##### ORGANISM #####*/
+
+/* HEADER */
+header {
+    background-color: white;
+    box-shadow: 0px 4px 5px #d2dce7;
+    display: relative;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+    padding: 2% 5%;
+}
+
+
+/* MAIN */
+.banner {
+    color: white;
+    background-color: #0c0633;
+    margin-bottom: 5%;
+    padding: 25% 5%;
+    text-shadow: 0px 4px 5px black;
+    margin-bottom: 10%;
+}
+.mainbanner {
+    text-align: start;
+    background: linear-gradient(#00000033, #00000033), url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 12% 5% 5%;
+}
+.basicbanner p {
+    margin-bottom: 2%;
+}
+main section {
+    text-align: center;
+    padding: 0% 5%;
+    margin-bottom: 5%;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-bottom: 10%;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+}
+footer section {
+    margin-bottom: 10%;
+}
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*####################*/
+/*##### RESPONSIVE #####*/
+/* MOBILE */
+@media screen and (max-width: 767px) {
+    table.desktop {
+        display: none;
+    }
+
+    nav ul{
+        width: 100%;
+        height: 0px;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+    .btnMenu {
+        opacity: 0;
+        position: absolute;
+        width: 26px;
+        height: 34px;
+        top: 3vh;
+        right: 5vw;
+        z-index: 3;
+    }
+    .btnMenu:checked ~ nav ul {
+        height: 160px;
+    }
+    .icoMenu {
+        position: absolute;
+        top: 3vh;
+        right: 5vw;
+        z-index: 2;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    table.mobile, footer br, .icoMenu, .btnMenu{
+        display: none;
+    }
+
+    h1, h2, h3, h4 {
+        line-height: 1.1;
+    }
+    h2.headings1 {
+        margin-bottom: 4%;
+    }
+    h1.contatti {
+        margin: 4% 0% 2%;
+    }
+
+    td, th {
+        text-align: center;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 2% 5%;
+    }
+    header a:visited, header a:link, main a:link {
+        color: #888;
+    }
+    header nav ul {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 15%;
+        justify-content: space-around;
+        position: relative;
+        right: 10vw;
+    }
+    
+    .mainbanner {
+        padding: 12% 15% 5%;
+        margin-bottom: 5%;
+    }
+    .basicbanner {
+        padding: 15% 5%;
+    }
+    main a {
+        color: #000;
+    }
+    main h2 + p {
+        margin-bottom: 0%;
+    }
+    main .flex, main section.end {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        align-items: flex-start;
+    }
+    main .flex :nth-child(1){
+        flex: 0 1 30%;
+    }
+    main .flex :nth-child(2){
+        flex: 0 1 30%;
+    }
+    main .flex :nth-child(3){
+        flex: 0 1 30%;
+    }
+    main .flex p {
+        text-align: start;
+    }
+    main section.end {
+        text-align: start;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main section.contatti {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        align-items: flex-start;
+    }
+    main section.contatti form {
+        flex: 2 0.1 50%;
+    }
+
+    footer {
+        padding-top: 5%;
+    }
+    footer form {
+        width: 23vw;
+    }
+    footer input.button, footer input {
+        padding: 6% 0%;
+    }
+    footer input:first-of-type {
+        margin-top: 5%;
+    }
+    footer section:nth-child(1) {grid-area: fsiamo;}
+    footer section:nth-child(2) {grid-area: fsocial;}
+    footer section:nth-child(3) {grid-area: fnews;}
+    footer section:nth-child(4) {grid-area: fcopy; justify-self: center;}
+    footer {
+        display: grid;
+        gap: 8%;
+        grid-template-areas: 
+        'fsiamo fsocial fnews'
+        'fcopy fcopy fcopy';
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1200px) {
+    h1, h2, h3, h4 {
+        line-height: 1.2;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main section.end, table {
+        margin-bottom: 0%;
+    }
+
+
+    .basicbanner {
+        padding: 10% 5%;
+    }
+}
+
+/*####################*/
+/*##### ANIMATION #####*/
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  @keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  .hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: #cccccccc solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  }
+  .hvr-ripple-out:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+    animation-iteration-count: infinite;
+  }

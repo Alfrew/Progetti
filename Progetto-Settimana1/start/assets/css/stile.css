@@ -1,0 +1,145 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    text-align: center;
+}
+
+/* HEADER */
+header {
+    background-color: black;
+    padding: 8% 5%;
+}
+
+header img {
+    height: 2.5em;
+    width: auto;
+}
+
+/* MAIN */
+h1, h2, h3 {
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 8%;
+}
+
+main section:first-child {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    padding: 10%;
+}
+
+p {
+    margin: 2% 5% 10%;
+}
+
+main button {
+    color: white;
+    background-color: rgb(240, 76, 47);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 4% 10%;
+    border-radius: 5px;
+}
+
+main button:hover {
+    transform: scale(1.2)
+}
+
+main button:active {
+    box-shadow: inset 3px 3px 20px 2px rgb(180, 56, 34);
+}
+
+main section {
+    padding: 10%;
+}
+
+main section img {
+    height: auto;
+    width: 65vw;
+    border-radius: 100%;
+    margin-bottom: 6%;
+}
+
+main section:last-child {
+    background-color: #e22d0e;
+    color: white;
+    margin-bottom: 15%;
+    padding-top: 15%;
+    padding-bottom: 1%;
+}
+
+section blockquote {
+    font-style: italic;
+    margin: 0% 0% 10%;
+}
+
+blockquote + p{
+    font-size: 0.9em;
+}
+
+p span {
+    font-size: 1.5em;
+}
+
+/* ELEMENTI NELL' ASIDE */
+aside {
+    margin: 6%;
+    margin-bottom: 20%;
+}
+
+aside div {
+    border: 1px solid #dee1e3;
+    width: auto;
+    margin-bottom: 10%;
+}
+
+aside div img {
+    height: auto;
+    width: 100%;
+}
+
+aside a:link, aside a:visited{
+    text-decoration: none;
+    color: #393d41;
+}
+
+/* FOOTER */
+footer {
+    color: #c8e7f0;
+    font-size: 0.9em;
+    background-color: #25a2c3;
+    padding: 15% 0%;
+}
+
+footer hr {
+    color: white;
+    margin: 5% 28%;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer a {
+    color: #c8e7f0;
+}

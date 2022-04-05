@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="calculator">
+            <input type="text" disabled id="display" placeholder="0">
+            <div id="keypad">
+                <button onclick="canc()" type="button" class="btn btn-red">C</button>
+                <button onclick="neg()" type="button" id="negBtn" class="btn btn-red">-x</button>
+                <button onclick="oper('à')" type="button" class="btn btn-red">x&circ;</button>
+                <button onclick="oper('/')" type="button" class="btn btn-celeste">&div;</button>
+
+                <button onclick="number(7)" type="button" class="btn btn-gray">7</button>
+                <button onclick="number(8)" type="button" class="btn btn-gray">8</button>
+                <button onclick="number(9)" type="button" class="btn btn-gray">9</button>
+                <button onclick="oper('*')" type="button" class="btn btn-celeste">&times;</button>
+
+                <button onclick="number(4)" type="button" class="btn btn-gray">4</button>
+                <button onclick="number(5)" type="button" class="btn btn-gray">5</button>
+                <button onclick="number(6)" type="button" class="btn btn-gray">6</button>
+                <button onclick="oper('-')" type="button" class="btn btn-celeste">-</button>
+
+                <button onclick="number(1)" type="button" class="btn btn-gray">1</button>
+                <button onclick="number(2)" type="button" class="btn btn-gray">2</button>
+                <button onclick="number(3)" type="button" class="btn btn-gray">3</button>
+                <button onclick="oper('+')" type="button" class="btn btn-celeste">+</button>
+
+                <button onclick="AC()" type="button" class="btn btn-gray">AC</button>
+                <button onclick="number(0)" type="button" class="btn btn-gray">0</button>
+                <button onclick="point('.')" type="button" class="btn btn-gray">.</button>
+                <button onclick="result()" type="button" class="btn btn-celeste">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/calculator.js"></script>
+</body>
+
+</html>

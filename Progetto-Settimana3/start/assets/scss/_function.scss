@@ -1,0 +1,8 @@
+@function color-text($color) {
+    @if(lightness($background)>50){
+        @return black;
+    }
+    @else {
+        @return white;
+    }
+}

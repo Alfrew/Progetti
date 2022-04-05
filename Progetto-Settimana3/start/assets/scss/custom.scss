@@ -1,0 +1,29 @@
+@import 'function.scss';
+
+$partner: #F8F8F8;
+$body: white;
+$background: $body;
+
+.bg-boby {
+    background-color: $background;
+    color: color-text(white);
+}
+
+#partner {
+    background-color: $partner;
+    color: black;
+}
+
+#banner {
+    text-align: start;
+    background: linear-gradient(#00000050, #00000050), url(../images/dundermifflin.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 12% 5% 5%;
+}
+
+#carChisiamo .chisiamo {
+    max-height: 500px;
+}
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

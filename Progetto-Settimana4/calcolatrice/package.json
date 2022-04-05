@@ -1,0 +1,15 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "Dread Calculator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Metroid",
+    "Calculator"
+  ],
+  "author": "Alfredo Filigheddu",
+  "license": "ISC"
+}
