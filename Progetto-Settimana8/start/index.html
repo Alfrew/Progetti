@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TIM</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h1>Simulatore di Gestore telefonico e chiamate</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg col-lg-8">
+                    <nav id="banner" class="d-flex align-items-center mb-3">
+                        <img src="assets/img/logo-white.svg" alt="TIM" class="ms-2" />
+                    </nav>
+
+                    <div class="row mb-3">
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Nome" id="name" />
+                        </div>
+                        <div class="col-md">
+                            <input type="text" class="form-control" placeholder="Cognome" id="surname" />
+                        </div>
+                        <div class="col-md">
+                            <input type="number" class="form-control" min="0" placeholder="Credito" id="credit" />
+                        </div>
+                        <div class="col-md">
+                            <input type="button" class="btn btn-primary form-control" value="Aggiungi Cliente" id="newUser" />
+                        </div>
+                    </div>
+
+                    <div id="tableProduct">
+                        <table class="table">
+                            <thead>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Cognome</th>
+                                <th scope="col">Credito</th>
+                                <th scope="col">Chiamate</th>
+                            </thead>
+                            <tbody id="tb">
+                                <!-- Codice dinamico -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg col-lg-4 bg-black">
+                    <h3>Tester telefonico</h3>
+                    <div>
+                        <select name="User" id="userSelector" class="form-control">
+                            <option value="null">---Seleziona utente---</option>
+                        </select>
+                    </div>
+
+                    <div id="divDisplay" class="mb-5">
+                        <span id="display"></span>
+                    </div>
+
+                    <div class="flex-column gap-2 gap-xxl-3" id="tester">
+                        <button id="btn1" class="btn btn-info">119</button>
+                        <button id="btn2" class="btn btn-info">Chiamate effettuate</button>
+                        <button id="btn3" class="btn btn-success">Ricarica credito 5&euro;</button>
+                        <button id="btn4" class="btn btn-success">Ricarica credito 15&euro;</button>
+                        <button id="btn5" class="btn btn-success">Ricarica credito 25&euro;</button>
+                        <button id="btn6" class="btn btn-success">Ricarica credito 50&euro;</button>
+                        <button id="btn7" class="btn btn-danger">Azzera Chiamate</button>
+                        <button id="btn8" class="btn btn-warning">Chiama amante</button>
+                    </div>
+                    <div class="flex-column" id="closeCall">
+                        <button class="btn btn-danger" id="callBtn">Termina Chiamata</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>

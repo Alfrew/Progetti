@@ -1,0 +1,35 @@
+h3 {
+    color: white;
+}
+select {
+    margin-bottom: 8px;
+}
+table {
+    margin: auto;
+}
+
+#banner {
+    height: 10%;
+    background: #0033a1;
+    color: white;
+}
+#divDisplay {
+    height: 10%;
+    border-radius: 10px;
+    border: white 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+}
+#tester {
+    display: flex;
+}
+#closeCall {
+    display: none;
+}
+
+.col-lg {
+    height: 90vh;
+}
